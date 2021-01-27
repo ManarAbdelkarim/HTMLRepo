@@ -339,20 +339,16 @@ display: none;
         }
         else{
         if (discount ==0) {
-            if ((val *price) <= 100) {
-
-            document.getElementById("answer1").innerHTML = "The amount should be greater than 100 JD" ; 
-                    }
-                else{
-
+           
                 var resule = (price*val) ;
                 document.getElementById("answer1").innerHTML = "The total is"+ resule + "JD" +"no discount has been applied"; 
                 }
-        }
+        
         else{
         if ((val *price) <= 100 ) {
 
-             document.getElementById("answer1").innerHTML = "The total is"+ resule+ "no discount have been applied ,to get the discount the amount should be greater than 100 JD" ; 
+            var resule = (price*val) ;
+             document.getElementById("answer1").innerHTML = "The total is "+ resule+ "JD , no discount has been applied ,to get the discount the amount should be greater than 100 JD" ; 
         }
         else{
 
