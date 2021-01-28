@@ -57,7 +57,7 @@ function theme(){
   document.getElementById("body").style.background = 'black';
   document.getElementById("footer").style.background = 'none';
   document.getElementById("footer").style.color = "white"
-
+  document.getElementById("nav").style.border = "none";
   for (let index = 0; index < len; index++) {
     
     document.getElementsByClassName("desc")[index].style.color = "antiquewhite";
