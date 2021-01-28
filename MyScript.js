@@ -2,7 +2,7 @@
 
 var val = 0;
 var discount = 0;
-     
+ const matches2 =0;   
 
 function Cal(){
 
@@ -11,24 +11,14 @@ debugger;
 
 var price = document.getElementById("price").value;
 var val = document.getElementById("count").value;
-const  matches= document.getElementById("discount").value;
+var  matches= document.getElementById("discount").value;
 var mat = matches.toUpperCase();
-
-while(mat !== "DISC10" && mat !=="DISC25" && mat !== "DISC50")
-{
-var matches2= prompt("enter the write code");
-sleep(10000);
-mat = matches2.toUpperCase();
- discount = matches2.match(/(\d+)/)[0]; 
-// document.getElementById("answer").innerHTML = "Please enter a valid discount code" ; 
- 
+if (mat !== "DISC10" && mat !=="DISC25" && mat !== "DISC50") {
+matches = check(mat).toString();
 
 }
 
 discount = matches.match(/(\d+)/)[0]; 
-
-
-
 
 if (val==0) {
 document.getElementById("answer").innerHTML = "Choose at least one item" ; 
@@ -123,6 +113,27 @@ function theme(){
     } while (currentDate - date < milliseconds);
   }
  
+
+function check(any){
+        debugger;
+    var mat = any;
+        while(mat !== "DISC10" && mat !=="DISC25" && mat !== "DISC50")
+    {
+    var matches2= prompt("enter the write code");
+    sleep(1000);
+    mat = matches2.toUpperCase();
+     discount = matches2.match(/(\d+)/)[0]; 
+    // document.getElementById("answer").innerHTML = "Please enter a valid discount code" ; 
+       
+    
+    }
+       return matches2;
+    }
+    
+
+
+
+
 // </script>
 
 //     $('.pop').dblclick(function(){
