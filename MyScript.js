@@ -86,7 +86,7 @@ function theme(){
     // document.getElementById("body").style.background = 'black';
     var len = prompt("choose the number of image in the page (from 1 to 8)");
     debugger
-    while (len <= 0 || len > 8 ){
+    while (len <= 0 || len > 8 || isNaN(len) ){
          len = prompt("choose the number of image in the page (from 1 to 8)");
     }
 
@@ -98,6 +98,7 @@ function theme(){
         
 
       }
+      alert("the while loop is in the calculation below, please scroll down")
 
       
  
