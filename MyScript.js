@@ -1,9 +1,8 @@
 // <script type="text/javascript">
 
 var val = 0;
-var discount = 0;
- const matches2 =0;   
-
+var discount = 0;   
+ var len ;
 function Cal(){
 
     
@@ -65,7 +64,7 @@ function theme(){
         document.getElementById("body").style.background = 'white';
         document.getElementById("footer").style.color = "#333"
 
-           for (let index = 0; index < 8; index++) {
+           for (let index = 0; index < len; index++) {
 
                 document.getElementsByClassName("desc")[index].style.color = "antiquewhite";
                 
@@ -84,7 +83,7 @@ function theme(){
 
  window.onload = (function() {
     // document.getElementById("body").style.background = 'black';
-    var len = prompt("choose the number of image in the page (from 1 to 8)");
+     len = prompt("choose the number of image in the page (from 1 to 8)");
     debugger
     while (len <= 0 || len > 8 || isNaN(len) ){
          len = prompt("choose the number of image in the page (from 1 to 8)");
