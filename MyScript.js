@@ -122,7 +122,7 @@ function check(any){
     var matches2= prompt("enter the write code");
     sleep(1000);
     mat = matches2.toUpperCase();
-     discount = matches2.match(/(\d+)/)[0]; 
+     
     // document.getElementById("answer").innerHTML = "Please enter a valid discount code" ; 
        
     
