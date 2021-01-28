@@ -1,7 +1,7 @@
 // <script type="text/javascript">
 
 var val = 0;
-
+var discount = 0;
      
 
 function Cal(){
@@ -19,13 +19,14 @@ while(mat !== "DISC10" && mat !=="DISC25" && mat !== "DISC50")
 var matches2= prompt("enter the write code");
 sleep(10000);
 mat = matches2.toUpperCase();
+ discount = matches2.match(/(\d+)/)[0]; 
 // document.getElementById("answer").innerHTML = "Please enter a valid discount code" ; 
  
 
 }
 
-  
-var discount = matches2.match(/(\d+)/)[0]; 
+discount = matches.match(/(\d+)/)[0]; 
+
 
 
 
