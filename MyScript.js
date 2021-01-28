@@ -96,6 +96,11 @@ function theme(){
     // document.getElementById("body").style.background = 'black';
     var len = prompt("choose the number of image in the page (from 1 to 8)");
     debugger
+    while (len <= 0 || len > 8 ){
+         len = prompt("choose the number of image in the page (from 1 to 8)");
+    }
+
+    debugger
     for (var i = 0; i < len ; i++) {
 
         document.getElementsByClassName("pop")[i].style.display = "block";
