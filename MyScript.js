@@ -55,22 +55,37 @@ function theme(){
      if (document.getElementById("body").style.background == "white") {
     
   document.getElementById("body").style.background = 'black';
-  
-      
+  document.getElementById("footer").style.background = 'none';
+  document.getElementById("footer").style.color = "white"
+
+  for (let index = 0; index < len; index++) {
+    
+    document.getElementsByClassName("desc")[index].style.color = "antiquewhite";
+    document.getElementsByClassName("desc")[index].style.border = "white solid 2px";
+    
+    document.getElementsByClassName("desc")[index].style.background = "none";
+    
+    
+    
+}
       
   }
  else
-    {
+    {   
+
+        document.getElementById("nav").style.border = "solid antiquewhite 5px";
         document.getElementById("body").style.background = 'white';
+        document.getElementById("footer").style.background = 'antiquewhite';
         document.getElementById("footer").style.color = "#333"
+
 
            for (let index = 0; index < len; index++) {
 
+            
+                document.getElementsByClassName("pop")[index].style.border = "solid #333 1px";
                 document.getElementsByClassName("desc")[index].style.color = "antiquewhite";
-                
                 document.getElementsByClassName("desc")[index].style.border = "solid antiquewhite 5px";
                 document.getElementsByClassName("desc")[index].style.background = "#333";
-              
              
              
          }
