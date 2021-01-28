@@ -16,11 +16,15 @@ var mat = matches.toUpperCase();
 
 while(mat !== "DISC10" && mat !=="DISC25" && mat !== "DISC50")
 {
-document.getElementById("answer").innerHTML = "Please enter a valid discount code" ; 
 var matches2= prompt("enter the write code");
+sleep(10000);
 mat = matches2.toUpperCase();
+// document.getElementById("answer").innerHTML = "Please enter a valid discount code" ; 
+ 
 
 }
+
+  
 var discount = matches2.match(/(\d+)/)[0]; 
 
 
@@ -98,8 +102,20 @@ function theme(){
         
 
       }
+
+      
  
  });
+
+ function sleep(milliseconds) {
+
+    debugger;
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
  
 // </script>
 
