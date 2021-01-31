@@ -134,7 +134,7 @@ function check(any){
     var mat = any;
         while(mat !== "DISC10" && mat !=="DISC25" && mat !== "DISC50")
     {
-    var matches2= prompt("enter the write code");
+    var matches2= prompt("enter the right code");
     sleep(1000);
     mat = matches2.toUpperCase();
      
